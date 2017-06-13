@@ -4,6 +4,8 @@
 <head>
 <title>List Customers</title>
 <!-- reference our style sheet -->
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
 </head>
 <body>
 	<div id="wrapper">
@@ -32,6 +34,11 @@
 			</table>
 		</div>
 	</div>
+
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script
+		src="webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
 </body>
 </html>
 
