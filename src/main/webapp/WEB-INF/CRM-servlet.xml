@@ -15,7 +15,7 @@
         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<!-- Step 3: Add support for component scanning -->
-	<context:component-scan base-package="com.pers" />
+	<context:component-scan base-package="com.pers.crm" />
 
 	<!-- Step 4: Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven />
@@ -45,7 +45,7 @@
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="myDataSource" />
-		<property name="packagesToScan" value="com.pers.entity" />
+		<property name="packagesToScan" value="com.pers.crm.entity" />
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
