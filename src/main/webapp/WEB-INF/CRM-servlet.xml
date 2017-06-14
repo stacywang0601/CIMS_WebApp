@@ -64,8 +64,7 @@
 	<!-- Step 10:serve all requests for resources coming in with a public URL 
 		pattern like “/webjars/**” by searching in the “/webjars/” directory under 
 		the root folder in our application. -->
-
-	<mvc:resources location="/webjars/" mapping="/webjars/**" />
+	<mvc:resources mapping="/webjars/**" location="/webjars/" />
 
 </beans>
 

@@ -4,11 +4,11 @@
 <head>
 <title>List Customers</title>
 <!-- reference our style sheet -->
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+<link href="${pageContext.request.contextPath}/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 </head>
 <body>
-	<div id="wrapper">
+	<div class="container">
 		<div id="header">
 			<h2>CRM - Customer Relationship Manager</h2>
 		</div>
@@ -17,7 +17,7 @@
 	<div id="container">
 		<div id="content">
 			<!--  html table here -->
-			<table>
+			<table class="table table-striped">
 				<tr>
 					<th>First Name</th>
 					<th>Last Name</th>
@@ -35,10 +35,8 @@
 		</div>
 	</div>
 
-	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script
-		src="webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/webjars/jquery/1.9.1/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
 
