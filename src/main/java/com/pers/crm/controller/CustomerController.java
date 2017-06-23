@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.per.crm.service.CustomerService;
 import com.pers.crm.entity.Customer;
+import com.pers.crm.service.CustomerService;
 
 @Controller
 @RequestMapping("/customer")

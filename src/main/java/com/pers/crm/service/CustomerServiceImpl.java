@@ -1,4 +1,4 @@
-package com.per.crm.service;
+package com.pers.crm.service;
 
 import java.util.List;
 
