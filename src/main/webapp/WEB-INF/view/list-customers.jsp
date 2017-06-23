@@ -15,6 +15,12 @@
 			<h2>CRM - Customer Relationship Manager</h2>
 		</div>
 
+		<!-- put new button: Add Customer -->
+
+		<input type="button" value="Add Customer"
+			onclick="window.location.href='showFormForAdd'; return false;"
+			class="btn btn-success" />
+
 		<!--  html table here -->
 		<table class="table table-striped">
 			<thead>
