@@ -1,11 +1,16 @@
 <nav role="navigation" class="navbar navbar-default">
-
-
 	<div class="navbar-collapse">
 		<ul class="nav navbar-nav">
 			<li ><a href="/">Home</a></li>
 			<li ><a href="/customer/list">Customer Info</a></li>
 		</ul>
 	</div>
+</nav>
 
+<nav class="navbar navbar-default  navbar-fixed-bottom"
+	role="navigation">
+	<div class="container text-center">
+		<p class="navbar-text col-md-12 col-sm-12 col-xs-12">&copy; 2017
+			STACY WANG ALL RIGHTS RESERVED</p>
+	</div>
 </nav>

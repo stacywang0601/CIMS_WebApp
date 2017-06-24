@@ -8,6 +8,7 @@
 	<div class="container">
 		<div id="header">
 			<h3>CIMS - Customer Info Management System</h3>
+			<br> 
 		</div>
 
 		<h4>Save Customer</h4>
@@ -47,7 +48,9 @@
 		</form:form>
 
 		<div style=""></div>
-
+		<br>
+		<br>
+		<br>
 		<p>
 			<a href="${pageContext.request.contextPath}/customer/list">Back
 				to List</a>

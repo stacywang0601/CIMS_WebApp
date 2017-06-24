@@ -7,6 +7,7 @@
 	<div class="container">
 		<div class="header">
 			<h3>CIMS - Customer Info Management System</h3>
+			<br> 
 		</div>
 		<table class="table table-striped">
 			<!--  html table here -->
