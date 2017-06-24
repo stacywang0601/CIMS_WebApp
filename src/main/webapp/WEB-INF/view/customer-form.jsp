@@ -14,7 +14,7 @@
 
 		<form:form action="saveCustomer" modelAttribute="customer"
 			method="POST">
-			
+
 			<!-- need to associate this data with customer id -->
 			<form:hidden path="id" />
 
@@ -23,24 +23,27 @@
 					<tr>
 						<td><label>First name:</label></td>
 						<td><form:input path="firstName" type="text"
-								class="form-control" required="required"/></td>
+								class="form-control" required="required" /></td>
 					</tr>
 					<tr>
 						<td><label>Last name:</label></td>
 						<td><form:input path="lastName" type="text"
-								class="form-control" required="required"/></td>
+								class="form-control" required="required" /></td>
 					</tr>
 					<tr>
+					
 						<td><label>Email:</label></td>
-						<td><form:input path="email" type="text" class="form-control" required="required" /></td>
-					</tr>
+						<td><form:input path="email" type="text" class="form-control"
+								required="required" /></td>
 
+					</tr>
 					<tr>
-						<td><label></label></td>
-						<td><input type="submit" value="Save" class="btn btn-success" /></td>
+						<td></td>
+						<td><form:errors path="email" cssClass="text-warning" /></td>
 					</tr>
 				</tbody>
 			</table>
+			<button type="submit" class="btn btn-success">Save</button>
 
 		</form:form>
 
@@ -53,14 +56,4 @@
 
 	</div>
 
-<%@ include file="common/footer.jspf"%>
-
-
-
-
-
-
-
-
-
-
+	<%@ include file="common/footer.jspf"%>
