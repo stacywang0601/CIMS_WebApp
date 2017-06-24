@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "customer")
@@ -23,6 +24,7 @@ public class Customer {
 	private String	lastName;
 
 	@Column(name = "email")
+	@Size(min = 5, message = "Enter atleast 5 Characters.")
 	private String	email;
 
 	public Customer() {
