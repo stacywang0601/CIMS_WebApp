@@ -1,23 +1,16 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ include file="common/header.jspf"%>
+<%@ include file="common/navigation.jspf"%>
 
-<!DOCTYPE html>
-<html>
-
-<head>
 <title>Save Customer</title>
-<link
-	href="${pageContext.request.contextPath}/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
 </head>
 
 <body>
-
 	<div class="container">
 		<div id="header">
-			<h2>CRM - Customer Relationship Manager</h2>
+			<h3>CIMS - Customer Info Management System</h3>
 		</div>
 
-		<h3>Save Customer</h3>
+		<h4>Save Customer</h4>
 
 		<form:form action="saveCustomer" modelAttribute="customer"
 			method="POST">
@@ -30,16 +23,16 @@
 					<tr>
 						<td><label>First name:</label></td>
 						<td><form:input path="firstName" type="text"
-								class="form-control" /></td>
+								class="form-control" required="required"/></td>
 					</tr>
 					<tr>
 						<td><label>Last name:</label></td>
 						<td><form:input path="lastName" type="text"
-								class="form-control" /></td>
+								class="form-control" required="required"/></td>
 					</tr>
 					<tr>
 						<td><label>Email:</label></td>
-						<td><form:input path="email" type="text" class="form-control" /></td>
+						<td><form:input path="email" type="text" class="form-control" required="required" /></td>
 					</tr>
 
 					<tr>
@@ -60,14 +53,7 @@
 
 	</div>
 
-	<script
-		src="${pageContext.request.contextPath}/webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script
-		src="${pageContext.request.contextPath}/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+<%@ include file="common/footer.jspf"%>
 
 
 

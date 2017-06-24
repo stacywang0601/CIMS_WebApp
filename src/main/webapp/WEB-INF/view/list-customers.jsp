@@ -1,28 +1,15 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<!DOCTYPE html>
-<html>
-<head>
+<%@ include file="common/header.jspf"%>
+<%@ include file="common/navigation.jspf"%>
 <title>List Customers</title>
-<!-- reference our style sheet -->
-<link
-	href="${pageContext.request.contextPath}/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
 </head>
+
 <body>
 	<div class="container">
 		<div class="header">
-			<h2>CRM - Customer Relationship Manager</h2>
+			<h3>CIMS - Customer Info Management System</h3>
 		</div>
-
-		<!-- put new button: Add Customer -->
-
-		<input type="button" value="Add Customer"
-			onclick="window.location.href='showFormForAdd'; return false;"
-			class="btn btn-success" />
-
-		<!--  html table here -->
 		<table class="table table-striped">
+			<!--  html table here -->
 			<thead>
 				<tr>
 					<th>First Name</th>
@@ -50,25 +37,27 @@
 						<td>${tempCustomer.lastName}</td>
 						<td>${tempCustomer.email}</td>
 						<td>
-							<!-- display the update link --> 
-							<a type="button" class="btn btn-primary" href="${updateLink}">Update</a> 
-							| 
-							<a type="button" class="btn btn-warning" href="${deleteLink}" onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
+							<!-- display the update link --> <a type="button"
+							class="btn btn-primary" href="${updateLink}">Update</a> <a
+							type="button" class="btn btn-warning" href="${deleteLink}"
+							onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
 
 						</td>
 					</tr>
 				</c:forEach>
 			<tbody>
 		</table>
+		<div>
+			<!-- put new button: Add Customer -->
+			<input type="button" value="Add Customer"
+				onclick="window.location.href='showFormForAdd'; return false;"
+				class="btn btn-success" />
+		</div>
 	</div>
 
 
-	<script
-		src="${pageContext.request.contextPath}/webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script
-		src="${pageContext.request.contextPath}/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</body>
-</html>
+	<%@ include file="common/footer.jspf"%>
+
 
 
 
