@@ -24,21 +24,20 @@
 						<td><label>First name:</label></td>
 						<td><form:input path="firstName" type="text"
 								class="form-control" required="required" /></td>
+						<td><form:errors path="firstName" cssClass="text-warning" /></td>
 					</tr>
 					<tr>
 						<td><label>Last name:</label></td>
 						<td><form:input path="lastName" type="text"
 								class="form-control" required="required" /></td>
-					</tr>
-					<tr>
-					
-						<td><label>Email:</label></td>
-						<td><form:input path="email" type="text" class="form-control"
-								required="required" /></td>
+						<td><form:errors path="lastName" cssClass="text-warning" /></td>
 
 					</tr>
 					<tr>
-						<td></td>
+
+						<td><label>Email:</label></td>
+						<td><form:input path="email" type="text" class="form-control"
+								required="required" /></td>
 						<td><form:errors path="email" cssClass="text-warning" /></td>
 					</tr>
 				</tbody>

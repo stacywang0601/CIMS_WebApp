@@ -1,3 +1,11 @@
+
+<nav class="navbar navbar-default  navbar-fixed-bottom"
+	role="navigation">
+	<div class="container text-center">
+		<p class="navbar-text col-md-12 col-sm-12 col-xs-12">&copy; 2017
+			STACY WANG ALL RIGHTS RESERVED</p>
+	</div>
+</nav>
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>

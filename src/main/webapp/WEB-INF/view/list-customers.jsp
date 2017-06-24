@@ -54,16 +54,4 @@
 				class="btn btn-success" />
 		</div>
 	</div>
-
-
 	<%@ include file="common/footer.jspf"%>
-
-
-
-
-
-
-
-
-
-
