@@ -1,5 +1,7 @@
-# Customer_Relationship_Management_WebApp
+# Customer_Info_Management_System_WebApp
 
-	•	Managed project using Apache Maven comprehension tool
-	•	Used Hibernate ORM to achieve CRUD operation of data in MySQL database 
-	•	Designed front end utilizing HTML and JSP and applied Bootstrap and Jquery to style the view
+	•	Developed a CIMS Web App to manage customer information based on Spring MVC framework
+	•	Created a responsive, dynamic and friendly web based UI using JSP, Bootstrap, JavaScript and jQuery
+	•	Achieved insertion, delete and update operation of data in MySQL database via Hibernate ORM 
+	•	Offered the validation of user’s input using Hibernate Validator 
+
